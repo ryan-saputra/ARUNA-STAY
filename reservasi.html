@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservasi - Aruna Stay</title>
+  <meta name="description" content="Halaman reservasi hotel dengan tabel dan formulir." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <nav class="container nav-simple" aria-label="Navigasi halaman reservasi">
+      <a class="brand-dark" href="index.html">Aruna Stay</a>
+      <a class="link-back" href="index.html">Kembali ke Beranda</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="judul-tabel">
+      <div class="container">
+        <h1 id="judul-tabel">Daftar Harga Kamar</h1>
+        <p>Berikut pilihan kamar yang tersedia untuk pemesanan.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Informasi kamar Aruna Stay</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tipe Kamar</th>
+                <th scope="col">Kapasitas</th>
+                <th scope="col">Fasilitas</th>
+                <th scope="col">Harga / Malam</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Standard</td>
+                <td>2 Orang</td>
+                <td>Wi-Fi, AC, TV</td>
+                <td>Rp420.000</td>
+              </tr>
+              <tr>
+                <td>Deluxe</td>
+                <td>2 Orang</td>
+                <td>Wi-Fi, AC, TV, Sarapan</td>
+                <td>Rp550.000</td>
+              </tr>
+              <tr>
+                <td>Family</td>
+                <td>4 Orang</td>
+                <td>Wi-Fi, AC, TV, Sarapan, Ruang Luas</td>
+                <td>Rp850.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="judul-formulir">
+      <div class="container form-container">
+        <h2 id="judul-formulir">Formulir Reservasi</h2>
+        <p>Isi data berikut untuk melakukan pemesanan kamar.</p>
+
+        <form class="form-card" action="#" method="post">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input id="nama" name="nama" type="text" placeholder="Masukkan nama lengkap" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Tanggal Check-in</label>
+              <input id="checkin" name="checkin" type="date" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Tanggal Check-out</label>
+              <input id="checkout" name="checkout" type="date" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipe-kamar">Tipe Kamar</label>
+              <select id="tipe-kamar" name="tipe-kamar" required>
+                <option value="">Pilih kamar</option>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="family">Family</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tamu">Jumlah Tamu</label>
+              <input id="tamu" name="tamu" type="number" min="1" max="4" value="1" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="catatan">Catatan Tambahan</label>
+            <textarea id="catatan" name="catatan" rows="4" placeholder="Contoh: kamar bebas rokok"></textarea>
+          </div>
+
+          <button class="button button-submit" type="submit">Kirim Reservasi</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>Aruna Stay</strong> · Jl. Merdeka No. 88, Bandung</p>
+      <p>Email: hello@arunastay.id · Telp: (022) 1234 5678</p>
+    </div>
+  </footer>
+</body>
+</html>

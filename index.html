@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aruna Stay</title>
+  <meta name="description" content="Website hotel sederhana dengan HTML semantik dan Vanilla CSS." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="beranda">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda">Aruna Stay</a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#kamar">Kamar</a></li>
+        <li><a href="reservasi.html">Reservasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+         <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container" aria-labelledby="judul-hero">
+      <p class="eyebrow">Hotel nyaman di tengah kota</p>
+      <h1 id="judul-hero">Istirahat yang tenang, pengalaman yang berkesan</h1>
+      <p>
+        Nikmati suasana modern, pelayanan ramah, dan kamar yang dirancang
+        untuk kenyamanan terbaik Anda.
+      </p>
+      <a class="button" href="#kamar">Lihat Pilihan Kamar</a>
+      <a class="button button-secondary" href="login.html">Masuk Sekarang</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="tentang" aria-labelledby="judul-tentang">
+      <div class="container">
+        <h2 id="judul-tentang">Tentang Kami</h2>
+        <p>
+          Aruna Stay menghadirkan penginapan yang bersih, tenang, dan mudah
+          dijangkau. Lokasi strategis kami memudahkan akses ke pusat bisnis,
+          kuliner, dan destinasi wisata.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="layanan" aria-labelledby="judul-layanan">
+      <div class="container">
+        <h2 id="judul-layanan">Layanan Unggulan</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Sarapan Pagi</h3>
+            <p>Menu lokal dan internasional yang disiapkan setiap hari.</p>
+          </article>
+          <article class="card">
+            <h3>Wi-Fi Cepat</h3>
+            <p>Koneksi internet stabil untuk kerja maupun hiburan.</p>
+          </article>
+          <article class="card">
+            <h3>Layanan 24 Jam</h3>
+            <p>Tim resepsionis siap membantu kebutuhan Anda kapan pun.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kamar" aria-labelledby="judul-kamar">
+      <div class="container">
+        <h2 id="judul-kamar">Pilihan Kamar</h2>
+        <img class="section-image" src="img/hotel_bg.png" alt="Interior hotel Aruna Stay" />
+        <div class="grid-2">
+          <article class="room">
+            <h3>Deluxe Room</h3>
+            <p>Kapasitas 2 orang · Tempat tidur queen · Pemandangan kota</p>
+            <p class="price">Mulai Rp550.000/malam</p>
+          </article>
+          <article class="room">
+            <h3>Family Room</h3>
+            <p>Kapasitas 4 orang · Dua tempat tidur besar · Area luas</p>
+            <p class="price">Mulai Rp850.000/malam</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="kontak">
+    <div class="container footer-content">
+      <p><strong>Aruna Stay</strong> · Jl. Merdeka No. 88, Bandung</p>
+      <p>Email: hello@arunastay.id · Telp: (022) 1234 5678</p>
+    </div>
+  </footer>
+</body>
+</html>
